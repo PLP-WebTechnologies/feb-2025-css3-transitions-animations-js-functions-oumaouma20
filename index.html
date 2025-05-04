@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Animations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Animation Playground</h1>
+        
+        <div class="preferences">
+            <h2>User Preferences</h2>
+            <div class="form-group">
+                <label for="username">Name:</label>
+                <input type="text" id="username" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="theme">Theme Color:</label>
+                <select id="theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="blue">Blue</option>
+                </select>
+            </div>
+            <button id="savePrefs">Save Preferences</button>
+        </div>
+
+        <div class="animation-area">
+            <h2>Animation Controls</h2>
+            <div class="animated-box" id="targetBox"></div>
+            <div class="controls">
+                <button id="bounceBtn">Bounce Animation</button>
+                <button id="spinBtn">Spin Animation</button>
+                <button id="colorBtn">Color Change</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
